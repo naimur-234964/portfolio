@@ -16,7 +16,7 @@
     <script src="tailwind.config.js"></script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!-- header bg image start -->
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <img src="assets/images/header-bg-color.png" alt="" class="w-full">
@@ -36,7 +36,6 @@
             <li><a href="#contact">Contact Me</a></li>
         </ul>
         <div class="flex items-center gap-4">
-
             <button class="text-2xl">
                 <i class="fa-regular fa-moon fa- -rotate-12"></i>
             </button>
@@ -45,9 +44,30 @@
                 Contact
                 <i class="fa-solid fa-arrow-right text-2xl -rotate-45"></i>
             </a>
+            <button class="block md:hidden ml-3 text-2xl" onclick="openMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
         </div>
+
+        <!-- mobile menu start -->
+         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 z-50 w-64 h-screen bg-rose-50 transition duration-500">
+
+            <div class="absolute right-6 top-6" onclick="hideMenu()">
+                <i class="fa-solid fa-x text-2xl"></i>
+            </div>
+
+            <li><a href="#top" onclick="hideMenu()">Home</a></li>
+            <li><a href="#about" onclick="hideMenu()">About Me</a></li>
+            <li><a href="#services" onclick="hideMenu()">Services</a></li>
+            <li><a href="#work" onclick="hideMenu()">My Works</a></li>
+            <li><a href="#contact" onclick="hideMenu()">Contact Me</a></li>
+         </ul>
+        <!-- mobile menu end -->
     </nav>
     <!-- navbar end -->
+
+    <!-- Default Javascript -->
+     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
