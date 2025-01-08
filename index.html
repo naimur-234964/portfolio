@@ -9,17 +9,45 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
 
     <script src="tailwind.config.js"></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-            </li>
+    <!-- header bg image start -->
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="assets/images/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <!-- header bg image end -->
+
+    <!-- navbar start -->
+    <nav id="navbar" class="w-full fixed px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50">
+        <a href="" class="ml-4">
+            <img src="assets/images/New Project.png" alt="logo" class="w-28">
+        </a>
+        <ul class="hidden md:flex items-center bg-white shadow-sm bg-opacity-50 px-10 py-3 rounded-full gap-6 lg:gap-8">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Works</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
+        <div class="flex items-center gap-4">
+
+            <button class="text-2xl">
+                <i class="fa-regular fa-moon fa- -rotate-12"></i>
+            </button>
+            <a href="#contact"
+                class="hidden lg:flex items-center  bg-white border border-gray-500 px-10 py-2.5 rounded-full gap-3 ml-4">
+                Contact
+                <i class="fa-solid fa-arrow-right text-2xl -rotate-45"></i>
+            </a>
+        </div>
     </nav>
+    <!-- navbar end -->
 </body>
 
 </html>
