@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 
 <head>
     <meta charset="UTF-8">
@@ -19,9 +19,9 @@
     <script src="tailwind.config.js"></script>
 </head>
 
-<body class="overflow-x-hidden leading-8">
+<body class="overflow-x-hidden leading-8 dark:bg-darkTheme dark:text-white">
     <!-- header bg image start -->
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
         <img src="assets/images/header-bg-color.png" alt="" class="w-full">
     </div>
     <!-- header bg image end -->
@@ -39,8 +39,9 @@
             <li><a href="#contact">Contact Me</a></li>
         </ul>
         <div class="flex items-center gap-4">
-            <button class="text-2xl">
-                <i class="fa-regular fa-moon fa- -rotate-12"></i>
+            <button id="moon" class="text-2xl" onclick="toggleTheme()">
+                <i class="fa-regular fa-moon -rotate-12 dark:hidden" onclick="darkMode()"></i>
+                <i class="hidden fa-solid fa-sun dark:block"  onclick="lightMode()"></i>
             </button>
             <a href="#contact"
                 class="hidden lg:flex items-center  bg-white border border-gray-500 px-10 py-2.5 rounded-full gap-3 ml-4">
@@ -87,7 +88,7 @@
 
         <div class="flex flex-col items-center gap-4 mt-3 sm:flex-row">
             <a href="#contact"
-                class="px-10 py-4 border rounded-full bg-gradient-to-r from-[#984152] to-[#354645] text-white">
+                class="px-10 py-4 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white">
                 contact me
                 <i class="ml-3 fa-solid fa-arrow-right"></i>
             </a>

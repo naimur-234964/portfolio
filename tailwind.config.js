@@ -6,12 +6,14 @@ tailwind.config = {
             },
             colors: {
                 lightHover: '#fff1f2',
-                darkHover: '#2a004a'
+                darkHover: '#2a004a',
+                darkTheme: '#11001f'
             },
             boxShadow: {
                 black: '4px 4px 0 #000',
                 white: '4px 4px 0 #fff'
             }
         }
-    }
+    },
+    darkMode: 'selector'
 }
